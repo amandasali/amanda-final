@@ -6,7 +6,7 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-lg-6">
+    <div class="col-lg-4">
     <h1>Queen</h1>
     <p class="author">By {% for author in authors %}
       <a href="{{ author.link }}" target="_blank">{{ author.name }}</a>{% if not loop.last %}{% if loop.revindex0 == 1 %} and {% else %}, {% endif %}{% endif %} {% endfor %}
@@ -20,16 +20,14 @@
       Queen: Albums <a href="detail-page.html">link to detail-page.html</a>
     </p>
       <ul> 
-        {% for book in books %}
-          <li>{{ book.title }}, {{ book.author }}</li>
-        {% else %}
-          <li>This would display if the 'books' collection were empty</li>
-        {% endfor %}
+       {% for disc in discography %}
+  <li>{{ disc.title }}, {{ disc.year }}</li>
+{% endfor %}
      </ul>
     </div>
     <div class="row">
-    <div class="col-lg-2">
-    <p>Info About Band</p>
+    <div class="col-lg-4">
+    <p>Queen are a British rock band that formed in London in 1970. Their classic line-up was Freddie Mercury (lead vocals and piano), Brian May (lead guitar and vocals), Roger Taylor (drums and vocals), and John Deacon (bass guitar). Their earliest works were influenced by progressive rock, hard rock and heavy metal, but the band gradually ventured into more conventional and radio-friendly works by incorporating further styles, such as arena rock and pop rock, into their music. </p>
   </div>
 </div>
 {% endblock %}
