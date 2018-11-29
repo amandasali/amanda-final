@@ -4,11 +4,13 @@
 <article class="container">
   <div class="row">
     <div class="col-sm-4 left-rail">
-      {% block info %}{% endblock %}
+      {% block info %} {{members.name}} {% endblock %}
     </div>
     <div class="col-sm-8">
       {% block story %}{% endblock %}
 
+<div class="container">
+<h1>About {{members.name}}</h1>
     </div>
   </div>
 </article>
