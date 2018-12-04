@@ -21,3 +21,26 @@
 // Import partials
 @import "nav";
 @import "jumbotron";
+@import "discography";
+
+.bio {
+    font-family: 'Bangers', cursive;
+    font-size: 1rem;
+    //padding-top: 6rem;
+    padding-left: 5rem;
+}
+
+.title {
+    font-family: 'Bangers', cursive;
+    font-size: 2rem;
+    //padding-top: 6rem;
+    padding-left: 5rem;
+}
+
+.card {
+    font-family: 'Bangers', cursive;
+}
+
+h5 {
+    font-family: 'Bangers', cursive;
+}
